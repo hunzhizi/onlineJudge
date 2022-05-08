@@ -1,0 +1,746 @@
+#1649667536
+pwd
+#1649667855
+ll
+#1649667867
+cd /
+#1649667869
+ll
+#1649667933
+cd linux_item/
+#1649667936
+ll
+#1649667946
+./hello.out
+#1649670348
+pwd
+#1649670354
+cd /
+#1649670355
+ll
+#1649670392
+cd linux_item/
+#1649670396
+ll
+#1649670407
+./hello.out
+#1649670431
+vim hello.c
+#1649670485
+./hello.out 12 12
+#1649942971
+pwd
+#1649942973
+ll
+#1649942976
+ls
+#1649942978
+ll
+#1649943002
+touch ex1
+#1649943010
+vi ex1
+#1649943038
+rm ex1
+#1649943040
+ll
+#1650025016
+ls
+#1650025027
+mkdir ymj
+#1650025055
+cd /home/ymj
+#1650025063
+cd /ymj
+#1650025067
+pwd
+#1650025086
+cd /home/teacherYu/ymj
+#1650025101
+vim test
+#1650084498
+l
+#1650084500
+ll
+#1650084524
+./getStuInfoById.sh
+#1650084573
+cat getStuInfoById.sh
+#1650084629
+pwd
+#1650084675
+cd /home/liuKuan
+#1650084686
+cd /
+#1650084690
+cd /home/liuKuan
+#1650084705
+cd /home/teacherYu
+#1650084761
+cd /
+#1650084763
+ll
+#1650084802
+cd /linux_item
+#1650084804
+ll
+#1650084929
+cd ..
+#1650084937
+cd /LinuxDemo
+#1650084939
+ll
+#1650085681
+cd /home/teacherYu
+#1650085683
+ll
+#1650085696
+cat getStuInfoById.sh
+#1650086058
+. /linux_item/sql/getStu_info/sqlFunction
+#1650086058
+# select列数
+#1650086058
+column_num=3
+#1650086058
+selectSql="select * from stu_info where stu_id = \"$1\";"
+#1650086058
+# 调用方法执行sql，打印出sql执行结果但不获取返回值
+#1650086058
+#mysqlExecute "$selectSql"
+#1650086058
+# 用数组接收查询返回值
+#1650086058
+result=(`mysqlExecuteQuery "$selectSql"`)
+#1650086058
+# 计算查询返回结果数据行数
+#1650086058
+row_num=`getRowNumFromResult ${column_num} ${result[*]}`
+#1650086058
+    # 获取第一列的值
+#1650086058
+    name=`getValueFromResult 1 2 $column_num ${result[*]}`
+#1650086058
+    # 获取第二列的值
+#1650086058
+    class=`getValueFromResult 1 3 $column_num ${result[*]}`
+#1650086058
+if [ "$name" != "" ] ; then     echo "stu_id: $1 name:${name} class:${class}"; else echo "该学生学号不存在"; fi
+#1650086065
+clear
+#1650086068
+ll
+#1650086078
+./getStuInfoById.sh
+#1650086179
+./getStuInfoById.sh cat
+#1650086185
+cat getStuInfoById.sh
+#1650086349
+cd /
+#1650086351
+ll
+#1650087061
+cd /home/liuKuan
+#1650087102
+cd /home/jiaWei
+#1650087118
+ll
+#1650087133
+cat source
+#1650087150
+cd /source
+#1650087537
+cd /home/teacherYu
+#1650087541
+ll
+#1650087548
+cd /home/teacherYu/ymj
+#1650087567
+touch file.c
+#1650087569
+ll
+#1650089414
+help <
+#1650089426
+help -<
+#1650112122
+cd /home/liuKuan
+#1650114674
+cd /home/liuKuan
+#1650114837
+cd /home/liuKuan
+#1650114839
+ll
+#1650114849
+cd source/
+#1650114851
+ll
+#1650114858
+cat 2.c
+#1650114871
+cd ..
+#1650114886
+cd testInput
+#1650114888
+ll
+#1650114900
+cd T2/
+#1650114902
+ll
+#1650114913
+cat 1.text
+#1650114942
+cd /home/liuKuan
+#1650114944
+ll
+#1650114956
+cat run.sh
+#1650114970
+cat test.sh
+#1650114982
+./test.sh
+#1650115019
+./test.sh
+#1650116664
+ll
+#1650116806
+cd test
+#1650116808
+ll
+#1650116813
+cd ..
+#1650116835
+ll
+#1650116848
+cd /home/liuKuan
+#1650116849
+ll
+#1650116879
+cd source 
+#1650116880
+ll
+#1650116946
+cd testInput
+#1650117046
+mkdir T4
+#1650117089
+ll
+#1650117095
+cd T4
+#1650117120
+vi 1.text
+#1650117219
+vi 1.text
+#1650117237
+vi 2.text
+#1650117263
+vi 2.text
+#1650117276
+vi 3.text
+#1650117319
+vi 4.text
+#1650117343
+vi 5.text
+#1650117539
+cd ..
+#1650117540
+ll
+#1650117665
+cd T5
+#1650117674
+vi 1.text
+#1650117687
+vi 2.text
+#1650117700
+vi 3.text
+#1650117713
+vi 4.text
+#1650117730
+vi 5.text
+#1650117741
+cd ..
+#1650117748
+cd ..
+#1650117750
+ll
+#1650117766
+cd testoutput
+#1650117770
+ll
+#1650117795
+vi standard.txt
+#1650117961
+vi standardT4.txt
+#1650118061
+vi standardT5.txt
+#1650118767
+cd ..
+#1650118771
+cd ..
+#1650118779
+./test.sh
+#1650118829
+vi test.sh
+#1650118945
+source test.sh
+#1650118991
+pwd
+#1650119143
+cd /
+#1650119144
+ll
+#1650119169
+cd linux_item
+#1650119171
+ll
+#1650119497
+ll
+#1650119510
+cd /home/liuKuan
+#1650119524
+cd ..
+#1650119526
+ll
+#1650119544
+cd /home
+#1650119546
+ll
+#1650119727
+cd /home/teacherYu
+#1650119744
+vi test.sh
+#1650119793
+vi 2.c
+#1650119962
+mkdir source
+#1650119981
+mv 2.c source/
+#1650119995
+cd /home/teacherYu/source
+#1650119996
+ll
+#1650120160
+mkdir testInput
+#1650120176
+chmod 777 testInput
+#1650120195
+cd testInput
+#1650120219
+mkdir T4
+#1650120225
+vi t1
+#1650120241
+rm t1
+#1650120251
+vi t1.txt
+#1650120268
+vi t2.txt
+#1650120310
+vi t3.txt
+#1650120328
+vi t4.txt
+#1650120347
+vi t5.txt
+#1650120365
+cd ..
+#1650120383
+mkdir T5
+#1650120391
+vi t1.txt
+#1650120423
+vi t2.txt
+#1650120442
+vi t3.txt
+#1650120481
+vi t4.txt
+#1650120503
+vi t5.txt
+#1650120540
+cd ..
+#1650120543
+ll
+#1650120553
+cd source
+#1650120555
+ll
+#1650120590
+rm t1.txt
+#1650120594
+rm t2.txt
+#1650120599
+rm t3.txt
+#1650120603
+rm t4.txt
+#1650120612
+rm t5.txt
+#1650120626
+rm T5
+#1650120649
+rmdir T5
+#1650120664
+cd testInput
+#1650120666
+ll
+#1650120678
+cd T4
+#1650120680
+ll
+#1650120701
+cd ..
+#1650120718
+rm t5.txt
+#1650120723
+rm t4.txt
+#1650120731
+rm t3.txt
+#1650120735
+rm t2.txt
+#1650120740
+rm t1.txt
+#1650120742
+ll
+#1650120750
+cd T4
+#1650120759
+vi t1.txt
+#1650120787
+vi t2.txt
+#1650120803
+vi t3.txt
+#1650120842
+vi t4.txt
+#1650120861
+vi t5.txt
+#1650120877
+cd ..
+#1650120885
+cd T5
+#1650120891
+vi t1.txt
+#1650120971
+chmod 777 t1.txt
+#1650120980
+cd ..
+#1650120982
+ll
+#1650120987
+cd T4
+#1650120989
+ll
+#1650120992
+cd ..
+#1650120995
+cd T5
+#1650121010
+vi t1.txt
+#1650121035
+sudo vi t1.txt
+#1650121173
+cd T5
+#1650121183
+vi t1.txt
+#1650121199
+vi t2.txt
+#1650121212
+vi t3.txt
+#1650121227
+vi t4.txt
+#1650121242
+vi t5.txt
+#1650121267
+cd ..
+#1650121332
+cd T2
+#1650121390
+vi t1.txt
+#1650121414
+vi t2.txt
+#1650121433
+vi t3.txt
+#1650121447
+vi t4.txt
+#1650121458
+vi t5.txt
+#1650121468
+cd ..
+#1650121487
+cd ..
+#1650121489
+ll
+#1650121501
+cd ..
+#1650121505
+ll
+#1650121549
+cd source/
+#1650121583
+mkdir testoutput
+#1650121595
+cd testoutput
+#1650121636
+vi standardT2.text
+#1650121689
+vi standardT4.text
+#1650121722
+vi standardT5.text
+#1650121803
+cd ..
+#1650121807
+cd ..
+#1650121811
+ll
+#1650121825
+vi test.sh
+#1650122455
+./test.sh
+#1650122470
+chmod 777 test.sh
+#1650122473
+./test.sh
+#1650122506
+vi test.sh
+#1650122570
+vi test.sh
+#1650122652
+./test.sh
+#1650122719
+vi test.sh
+#1650122798
+cd ..
+#1650122801
+ll
+#1650122810
+cd teacherYu/
+#1650122813
+ll
+#1650122827
+cd teacherYu/source
+#1650122836
+cd /teacherYu/source
+#1650122871
+cd /teacherYu/source
+#1650122874
+pwd
+#1650122888
+cd source/
+#1650122890
+ll
+#1650122901
+testInput
+#1650122917
+cd testInput
+#1650122919
+ll
+#1650122936
+cd T1
+#1650122939
+ll
+#1650122944
+cd ..
+#1650122949
+cd T2
+#1650122950
+ll
+#1650122957
+cd ..
+#1650122959
+ll
+#1650122963
+cd ..
+#1650122979
+cd testoutput/
+#1650122980
+ll
+#1650123007
+cd /home/teacherYu
+#1650123009
+ll
+#1650123017
+vi test.sh
+#1650123120
+./test.sh
+#1650123164
+vi test.sh
+#1650123239
+./test.sh
+#1650123264
+vi test.sh
+#1650123405
+./test.sh
+#1650123426
+vi test.sh
+#1650123485
+./test.sh
+#1650123508
+vi test.sh
+#1650123565
+./test.sh
+#1650123598
+vi test.sh
+#1650123616
+ll
+#1650123628
+cd source/
+#1650123630
+ll
+#1650123641
+vi 2.c
+#1650123680
+./test.sh
+#1650123685
+cd ..
+#1650123688
+./test.sh
+#1650123750
+vi test.sh
+#1650123829
+./test.sh
+#1650123854
+cd source/
+#1650123861
+cat 2.c
+#1650123869
+vi 2.c
+#1650123909
+cd ..
+#1650123916
+vi test.sh
+#1650123993
+./test.sh
+#1650124006
+./test.sh
+#1650124109
+cd /source
+#1650124120
+cd source/
+#1650124128
+cat 2.c
+#1650124161
+ll
+#1650124180
+cd testoutput
+#1650124183
+ll
+#1650124207
+cat standardT2.text
+#1650124249
+cd ..
+#1650124251
+cd ..
+#1650124253
+ll
+#1650124265
+vi test.sh
+#1650124337
+cd /home/teacherYu/source/testInput/T$i
+#1650124343
+ll
+#1650124386
+vi test.sh
+#1650124396
+cd ..
+#1650124400
+cd ..
+#1650124408
+ll
+#1650124414
+cd ..
+#1650124441
+./test.sh
+#1650124471
+vi test.sh
+#1650124887
+./test.sh
+#1650124977
+tree /home/teachYu
+#1650125009
+vi test.sh
+#1650125283
+vi test.sh
+#1650125429
+./test.sh
+#1650125457
+vi test.sh
+#1650125593
+cd source/
+#1650125594
+ll
+#1650125605
+cd ..
+#1650125609
+vi test.sh
+#1650126126
+./test.sh 
+#1650126250
+vi test.sh
+#1650126290
+source test.sh
+#1650126350
+cd source/
+#1650126352
+ll
+#1650126356
+cd ..
+#1650126359
+ll
+#1650126366
+vi 2.c
+#1650126391
+cd ..
+#1650126393
+ll
+#1650126403
+source test.sh
+#1650126469
+cd source/
+#1650126478
+pwd
+#1650126482
+cd ..
+#1650126490
+ll
+#1650126499
+vi 2.c
+#1650126514
+cd ..
+#1650126523
+source test.sh
+#1650126583
+pwd
+#1650126592
+cd ..
+#1650126594
+cd ..
+#1650126596
+cd ..
+#1650126601
+vi test.sh 
+#1650126683
+source test.sh
+#1650126689
+pwd
+#1650126991
+�cd ..
+#1650126997
+cd ..
+#1650127000
+ll
+#1650128309
+ll
+#1650128319
+cd source/
+#1650128321
+ll
+#1650128326
+vi 2.c
+#1650128439
+chmod 777 testInput
+#1650128456
+chmod 777 testoutput
+#1650128465
+cd ..
+#1650128467
+ll
+#1650128488
+chmod 777 source

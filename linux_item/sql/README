@@ -1,0 +1,5 @@
+getStu_info :获取学生info相关sh
+insertProblem：提交题目到数据库相关sh
+insertStu： 提交学生到数据库相关sh
+sqlshell：封装了连接数据库的相关函数
+

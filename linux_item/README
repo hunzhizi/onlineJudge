@@ -1,0 +1,5 @@
+problemSet :用于存放题目集
+sql ：里面存放数据库相关的操作
+stu_info  ：里面保存学生相关信息，脚本执行时资源文件所在地
+stuSources：学生提交成功之后的源代码存放的位置
+creatAccount: 学生账号的添加与删除
